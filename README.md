@@ -8,7 +8,7 @@ http://www.yama.info.waseda.ac.jp/
 
 
 
-Copyright 2016 Hiroki Asai, Yamana Laboratory, Waseda University.  
+Copyright (c) 2016 Hiroki Asai, Yamana Laboratory, Waseda University.  
 This work was supported by JSPS KAKENHI Grant Number 26540046.
 
 
