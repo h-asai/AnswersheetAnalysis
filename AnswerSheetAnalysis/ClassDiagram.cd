@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AnswerSheetAnalysis.AnswerGroupWindow">
+    <Position X="18.5" Y="1.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAIAAAIIAAABABIAAAEAAAoAAAAQIoAgAAAAA=</HashCode>
+      <FileName>AnswerGroupWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="analyzer" />
+      <Field Name="visualizer" />
+      <Field Name="selectedSheet" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.AnswerGroupItemData">
+    <Position X="13.75" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAgAAAAIAAQQAAAAAAAABCAAAAAQAAAAA=</HashCode>
+      <FileName>AnswerGroupWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="answerGroupData" />
+      <Property Name="AnswerGroupData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.AnswerSheetItemData">
+    <Position X="16.5" Y="7.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAACCSAIAAkgKIAMRLCCQICICEgACAAACAAAAIAAA=</HashCode>
+      <FileName>AnswerGroupWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="visualizer" />
+      <Field Name="openAnswerSheetCommand" />
+      <Field Name="compareAnswerSheetCommand" />
+      <Field Name="parentWindow" />
+      <Field Name="answerData" />
+      <Property Name="AnswerData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.AnswerSheetAnalyzer">
+    <Position X="6" Y="5.75" Width="3.75" />
+    <NestedTypes>
+      <Enum Name="AnswerSheetAnalysis.AnswerSheetAnalyzer.ClassificationFeature" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>AnswerSheetAnalyzer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEABFAAAgBAAAIIQQQAJgyAoCANEQCAIAwABIAEAhA=</HashCode>
+      <FileName>AnswerSheetAnalyzer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="hierarchicalResult" />
+      <Field Name="hierarchicalResultAnswerTime" />
+      <Property Name="HierarchicalResult" />
+      <Property Name="HierarchicalResultAnswerTime" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.AnswerSheetVisualizer">
+    <Position X="10.75" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAABAAAAACIABAAAACABAAAAA=</HashCode>
+      <FileName>AnswerSheetVisualizer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="analyzer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.CommonFunction">
+    <Position X="26.75" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAABAAAAoAAAAAABAQAAAAAAQAAA=</HashCode>
+      <FileName>Common\CommonFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.RelayCommand" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="7.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AnswerSheetAnalysis.StrokeExtensions">
+    <Position X="24.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\StrokeExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.TreeNodeBase&lt;T&gt;">
+    <Position X="11" Y="12" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAEATAAAAEQABAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Common\TreeNodeBase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="parent" />
+      <Property Name="Parent" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AnswerSheetAnalysis.ViewModelBase">
+    <Position X="15.25" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AnswerSheetAnalysis.ComparisonWindow">
+    <Position X="24.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ComparisonWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.Config">
+    <Position X="26.75" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAABAgAAAAAAAAAAAAEAAAIAgAAAEAAAAQA=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.AnalysisPenPoint">
+    <Position X="22.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAYQA=</HashCode>
+      <FileName>DataStructure\AnalysisPenPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.AnalysisPenStroke">
+    <Position X="25.25" Y="11.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAQAIAAAgAAEAAAAAAFBACAAAAAAhAQACAAAAAA=</HashCode>
+      <FileName>DataStructure\AnalysisPenStroke.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.AnswerDendrogramTreeNode">
+    <Position X="10" Y="15.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAQAIAAAAAAAAACAAAAAARCAAAAAAAAIAAA=</HashCode>
+      <FileName>DataStructure\AnswerDendrogramTreeNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AnswerData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.AnswerSheet">
+    <Position X="14.75" Y="16.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAkggAAAAEAAQAAIAAAAAAAABAAAAAAAg=</HashCode>
+      <FileName>DataStructure\AnswerSheet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.AnswerSheetGroup">
+    <Position X="11.75" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAgAAAAAAAAAQAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataStructure\AnswerSheetGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.AnswerStep">
+    <Position X="18" Y="18.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAgAAAgAEAAAAAACAAQAAAAFAAIABAAACAAAAAA=</HashCode>
+      <FileName>DataStructure\AnswerStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.DPMatchingResult">
+    <Position X="21.5" Y="16" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAABA=</HashCode>
+      <FileName>DataStructure\DPMatchingResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.HierarchicalClusteringResult">
+    <Position X="1.5" Y="12" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAABAAAAAAAAAwAAA=</HashCode>
+      <FileName>DataStructure\HierarchicalClusteringResult.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RootTree" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.StepComparisonResult">
+    <Position X="22" Y="19.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAACAAEAAAABAAACAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>DataStructure\StepComparisonResult.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="results" />
+      <Field Name="step1" />
+      <Field Name="step2" />
+      <Property Name="Results" />
+      <Property Name="Step1" />
+      <Property Name="Step2" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.StrokeComparisonResult">
+    <Position X="20.75" Y="13.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAkCAAAAAgAAAAEAAAkBAA=</HashCode>
+      <FileName>DataStructure\StrokeComparisonResult.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="results" />
+      <Field Name="stroke1" />
+      <Field Name="stroke2" />
+      <Field Name="sampledStroke1" />
+      <Field Name="sampledStroke2" />
+      <Property Name="Results" />
+      <Property Name="Stroke1" />
+      <Property Name="Stroke2" />
+      <Property Name="SampledStroke1" />
+      <Property Name="SampledStroke2" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.MainWindow">
+    <Position X="2.5" Y="8.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAAAIAAAQAAAABAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="analyzer" />
+      <Field Name="visualizer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.PreviewWindow">
+    <Position X="24.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PreviewWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.StepComparisonWindow">
+    <Position X="5.25" Y="15.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StepComparisonWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="analyzer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.StepComparisonitemData">
+    <Position X="20" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAIAAAACAAAAAAAIAAAAAAAAIAAAAAAAAAAgBAA=</HashCode>
+      <FileName>StepComparisonWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.StrokeComparisonWindow">
+    <Position X="6" Y="2.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StrokeComparisonWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="analyzer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AnswerSheetAnalysis.StrokeComparisonItemData">
+    <Position X="10.5" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAIAAAACAAAAAAAIAAAAAAAAIAAAAAAAAAAgBAA=</HashCode>
+      <FileName>StrokeComparisonWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="AnswerSheetAnalysis.ITreeNode&lt;T&gt;">
+    <Position X="22.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAEAAAAAAEQABAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Common\ITreeNode.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="メイリオ" Size="9" />
+</ClassDiagram>

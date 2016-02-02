@@ -1,0 +1,51 @@
+﻿<Window x:Class="AnswerSheetAnalysis.StepComparisonWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StepComparisonWindow" Height="600" Width="1000" Background="WhiteSmoke" BorderBrush="WhiteSmoke" WindowStyle="SingleBorderWindow">
+    <Window.Resources>
+        <DataTemplate x:Key="StepComparisonItem">
+            <Border BorderThickness="3" BorderBrush="LightSeaGreen" Margin="5">
+                <Grid>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Border BorderThickness="1" BorderBrush="Black" Height="40" Width="900">
+                                <Grid>
+                                    <InkCanvas Strokes="{Binding Path=Strokes1}" Background="LightYellow" EditingMode="None"/>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Border BorderThickness="1" BorderBrush="Black" Height="40" Width="900">
+                                <Grid>
+                                    <InkCanvas Strokes="{Binding Path=Strokes2}" Background="LightYellow" EditingMode="None"/>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                    <ItemsControl ItemsSource="{Binding Path=ResultCanvasCollection}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <Canvas/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <ItemsControl x:Name="StepComparisonControl" ItemTemplate="{StaticResource StepComparisonItem}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Left"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Window>
