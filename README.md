@@ -2,6 +2,8 @@
 AnswersheetAnalysis has been developed in Yamana Lab., Waseda University.  
 http://www.yama.info.waseda.ac.jp/
 
+This system classifies handwritten answer sheets into each answer strategy.
+
 ![Answer process comparison](https://raw.githubusercontent.com/h-asai/AnswersheetAnalysis/master/sample_pic/sample_pic_01.png)
 
 ![Answer sheet classification system](https://raw.githubusercontent.com/h-asai/AnswersheetAnalysis/master/sample_pic/sample_pic_02.png)
